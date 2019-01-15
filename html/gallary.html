@@ -1,0 +1,61 @@
+<html>
+
+<head>
+    <title>Gallary</title>
+    <link rel="stylesheet" href="./../css/gallary.css">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="./../../bootstrap/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="./../../bootstrap/js/bootstrap.min.js"></script>
+
+    <script src="./../js/gallary.js"></script>
+</head>
+
+<body>
+    <div class="header">
+        Best memories of this school !!
+    </div>
+
+    <div class="container">
+        <div class="img-row">
+            <div class="col-sm-4" onclick="enlargeImage('img-01')"><img src="./../images/school_01.jpg" id="img-01"
+                    class="img-gallary"></div>
+            <div class="col-sm-4" onclick="enlargeImage('img-02')"><img src="./../images/school_2.jpg" id="img-02"
+                    class="img-gallary"></div>
+            <div class="col-sm-4" onclick="enlargeImage('img-03')"><img src="./../images/school_3.jpg" id="img-03"
+                    class="img-gallary"></div>
+        </div>
+
+        <div class="img-row">
+            <div class="col-sm-4" onclick="enlargeImage('img-04')"><img src="./../images/dps2.jpg" id="img-04" class="img-gallary"></div>
+            <div class="col-sm-4" onclick="enlargeImage('img-05')"><img src="./../images/dps3.jpg" id="img-05" class="img-gallary"></div>
+            <div class="col-sm-4" onclick="enlargeImage('img-06')"><img src="./../images/dps4.jpg" id="img-06" class="img-gallary"></div>
+        </div>
+
+
+        <div class="img-row">
+            <div class="col-sm-4" onclick="enlargeImage('img-07')"><img src="E:\Bootstrap\school_management\images\dps5.jpg" id="img-07" class="img-gallary"></div>
+            <div class="col-sm-4" onclick="enlargeImage('img-08')"><img src="E:\Bootstrap\school_management\images\school-5.jpg" id="img-08" class="img-gallary"></div>
+            <div class="col-sm-4" onclick="enlargeImage('img-09')"><img src="E:\Bootstrap\school_management\images\school_4.jpg" id="img-09" class="img-gallary"></div>
+
+        </div>
+
+
+
+    </div>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="img01">
+        <div id="caption"></div>
+    </div>
+
+</body>
+
+</html>
