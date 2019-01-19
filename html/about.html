@@ -1,9 +1,10 @@
 <html>
-    <head>
 
-            <link rel="stylesheet" href="./../css/about.css">
+<head>
 
-        <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="./../css/about.css">
+
+    <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="./../bootstrap/css/bootstrap.min.css">
 
     <!-- jQuery library -->
@@ -12,150 +13,178 @@
     <!-- Latest compiled JavaScript -->
     <script src="./../bootstrap/js/bootstrap.min.js"></script>
 
-    </head>
+    <script>
+        function openCity(evt, cityName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
 
-    <body>
-        <div class="header">
-            <h1>About us</h1>
-          
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="column col-sm-4">
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+    </script>
 
-                        <p>Delhi Public School Society is one of the largest chains of
-                                K-12 schools in the world with over 150 schools in India and 
-                                foreign shores. The first DPS School, DPS Mathura Road, was
-                                established in 1947 and since then the society has been adding 
-                                world-class educational institutions all over India and abroad.
-                                Takshila Educational Society was set up in 1997 with the explicit 
-                                objective of establishing educational institutions which would offer
-                                holistic education. DPS Patna was the first milestone but certainly
-                                 not the last. The Takshila Society strove to make its presence felt 
-                                 in the four directions and consequently DPS Schools were established
-                                 in Pune, Ludhiana and Coimbatore. Excellent Scholastic and
-                                 Co Scholastic achievements year after year have made these schools 
-                                create their own niche.
-                                LATEST CIRCULARS
-                             </p>
+</head>
 
-                </div>
-                <div class ="col-sm-2"></div>
-                <div class="column col-sm-6">
+<body>
+    <div class="header">
+        <h1>About us</h1>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="column col-sm-4">
 
-                    <h1>our teachers </h1>
+                <p>Delhi Public School Society is one of the largest chains of
+                    K-12 schools in the world with over 150 schools in India and
+                    foreign shores. The first DPS School, DPS Mathura Road, was
+                    established in 1947 and since then the society has been adding
+                    world-class educational institutions all over India and abroad.
+                    Takshila Educational Society was set up in 1997 with the explicit
+                    objective of establishing educational institutions which would offer
+                    holistic education. DPS Patna was the first milestone but certainly
+                    not the last. The Takshila Society strove to make its presence felt
+                    in the four directions and consequently DPS Schools were established
+                    in Pune, Ludhiana and Coimbatore. Excellent Scholastic and
+                    Co Scholastic achievements year after year have made these schools
+                    create their own niche.
+                    LATEST CIRCULARS
+                </p>
 
-                    <div class="tab">
-                      <button class="tablinks" onclick="openCity(event, 'history')" id="defaultOpen">HISTORY</button>
-                      <button class="tablinks" onclick="openCity(event, 'math')">MATH</button>
-                      <button class="tablinks" onclick="openCity(event, 'hindi')">HINDI</button>
-                      <button class="tablinks" onclick="openCity(event, 'english')">ENGLISH</button>
-                    </div>
-                    
-                    <div id="history" class="tabcontent">
-                      <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
-                      <h3>history</h3>
-                      <p>Ram Prakash</p>
-                      <p>M.A pu</p>
-                    </div>
-                    
-                    <div id="math" class="tabcontent">
-                      <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
-                      <h3>math</h3>
-                      <p> Prakash Jha</p>
-                      <p>M.S.C (math) BHU</p>
-                    </div>
-                    
-                    <div id="hindi" class="tabcontent">
-                      <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
-                      <h3>hindi</h3>
-                      <p>R.S Sharma</p>
-                      <p>M.A pu</p>
-                    </div>
-                    
-                    <div id="english" class="tabcontent">
-                      <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
-                      <h3>english</h3>
-                      <p>Praveen Kumar</p>
-                      <p>M.A BHU</p>
-                    </div>
-                    
-                    
-                    <script>
-                    function openCity(evt, cityName) {
-                      var i, tabcontent, tablinks;
-                      tabcontent = document.getElementsByClassName("tabcontent");
-                      for (i = 0; i < tabcontent.length; i++) {
-                        tabcontent[i].style.display = "none";
-                      }
-                      tablinks = document.getElementsByClassName("tablinks");
-                      for (i = 0; i < tablinks.length; i++) {
-                        tablinks[i].className = tablinks[i].className.replace(" active", "");
-                      }
-                      document.getElementById(cityName).style.display = "block";
-                      evt.currentTarget.className += " active";
-                    }
-                    
-                    // Get the element with id="defaultOpen" and click on it
-                    document.getElementById("defaultOpen").click();
-                    </script>
-                       
-
-                </div>   
-             </div>
-         </div>  
- 
-        <div class="container">
-        
-            <div class="table-responsive">
-                <table class="table">
-                    <thead>
-                        <tr>
-                            <th>Sr.no</th>
-                            <th>Class</th>
-                            <th>Firstname</th>
-                            <th>Lastname</th>
-                            <th>Address</th>
-                            <th>Marks</th>
-                           
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>1</td>
-                            <td>9</td>
-                            <td>Ankita</td>
-                            <td>Pitt</td>
-                            <td>Patna</td>
-                            <td>78%</td>
-                            
-                        </tr>
-                    </tbody>
-                    <tbody>
-                            <tr>
-                                <td>2</td>
-                                <td>10</td>
-                                <td>Ankit</td>
-                                <td>kumar</td>
-                                <td>Gaya</td>
-                                <td>92%</td>
-                                
-                            </tr>
-                            <tr>
-                                    <td>3</td>
-                                    <td>10</td>
-                                    <td>Ankit</td>
-                                    <td>Sharma</td>
-                                    <td>Delhi</td>
-                                    <td>68%</td>
-                                    
-                                </tr>
-                        </tbody>
-                </table>
             </div>
+            <div class="col-sm-2"></div>
+            <div class="column col-sm-6">
 
-        </div> 
+                <h1>our teachers </h1>
+
+                <ul class="nav nav-tabs">
+                    <li class="active"><a data-toggle="tab" href="#home">Home</a></li>
+                    <li><a data-toggle="tab" href="#menu1">Menu 1</a></li>
+                    <li><a data-toggle="tab" href="#menu2">Menu 2</a></li>
+                    <li><a data-toggle="tab" href="#menu3">Menu 3</a></li>
+                </ul>
 
 
-    </body>
+                <div class="tab-content">
+                    <div id="home" class="tab-pane fade in active">
+                        <h3>HOME</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                    <div id="menu1" class="tab-pane fade">
+                        <h3>Menu 1</h3>
+                        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                    <div id="menu2" class="tab-pane fade">
+                        <h3>Menu 2</h3>
+                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+                    </div>
+                    <div id="menu3" class="tab-pane fade">
+                        <h3>Menu 3</h3>
+                        <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                    </div>
+                </div>
+
+
+
+                <!-- <div class="tab">
+                    <button class="tablinks" onclick="openCity(event, 'history')" id="defaultOpen">HISTORY</button>
+                    <button class="tablinks" onclick="openCity(event, 'math')">MATH</button>
+                    <button class="tablinks" onclick="openCity(event, 'hindi')">HINDI</button>
+                    <button class="tablinks" onclick="openCity(event, 'english')">ENGLISH</button>
+                </div>
+
+                <div id="history" class="tabcontent">
+                    <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+                    <h3>history</h3>
+                    <p>Ram Prakash</p>
+                    <p>M.A pu</p>
+                </div>
+
+                <div id="math" class="tabcontent">
+                    <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+                    <h3>math</h3>
+                    <p> Prakash Jha</p>
+                    <p>M.S.C (math) BHU</p>
+                </div>
+
+                <div id="hindi" class="tabcontent">
+                    <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+                    <h3>hindi</h3>
+                    <p>R.S Sharma</p>
+                    <p>M.A pu</p>
+                </div>
+
+                <div id="english" class="tabcontent">
+                    <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+                    <h3>english</h3>
+                    <p>Praveen Kumar</p>
+                    <p>M.A BHU</p>
+                </div> -->
+
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+
+        <div class="table-responsive">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Sr.no</th>
+                        <th>Class</th>
+                        <th>Firstname</th>
+                        <th>Lastname</th>
+                        <th>Address</th>
+                        <th>Marks</th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>9</td>
+                        <td>Ankita</td>
+                        <td>Pitt</td>
+                        <td>Patna</td>
+                        <td>78%</td>
+
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr>
+                        <td>2</td>
+                        <td>10</td>
+                        <td>Ankit</td>
+                        <td>kumar</td>
+                        <td>Gaya</td>
+                        <td>92%</td>
+
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>10</td>
+                        <td>Ankit</td>
+                        <td>Sharma</td>
+                        <td>Delhi</td>
+                        <td>68%</td>
+
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+
+
+</body>
+
 </html>

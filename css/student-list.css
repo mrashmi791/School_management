@@ -1,0 +1,11 @@
+.header {
+    height: 105px;
+    background-color: #45b1cb;
+    text-align: center;
+  }
+
+  .table-hover { 
+      /* Background-color: #45b1cb; */
+      cursor: pointer;
+  }
+

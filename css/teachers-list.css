@@ -1,0 +1,61 @@
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 380px;
+    margin: auto;
+    text-align: center;
+  }
+  
+  .title {
+    color: grey;
+    font-size: 18px;
+  }
+  
+  button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #45b1cb;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+  }
+  
+  a {
+    text-decoration: none;
+    font-size: 22px;
+    color: black;
+  }
+  
+  button:hover, a:hover {
+    opacity: 0.7;
+  }
+
+  .row {
+      margin: 15px 0px !important;
+  }
+
+  /* .c1 {
+    height: 40%;
+    width: 100%;
+  }
+
+  .c2 {
+    height: 120%;
+    width: 100%;
+  } */
+
+  .img-circle {
+    height: 40%;
+    /* text-align: center; */
+  }
+
+  .header {
+    height: 105px;
+    background-color: #45b1cb;
+    text-align: center;
+  }
+
+  

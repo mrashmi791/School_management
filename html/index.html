@@ -8,6 +8,8 @@
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="./../bootstrap/css/bootstrap.min.css">
 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
@@ -23,7 +25,7 @@
 
     <header class="header">
         <nav class="navbar navbar-style">
-            <div class="container">
+            <div>
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#micon">
                         <span class="icon-bar"></span>
@@ -38,10 +40,36 @@
                         <li><a href="#">Home</a></li>
                         <li><a href="./about.html">About-us</a></li>
                         <li><a href="./gallary.html">Gallery</a></li>
-                        <li><a href="# contact us">Contact</a></li>
-                        <li><a href="./student-registration.html">Registration</a></li>
-                        <li><a href="./login.html">Log-In</a></li>
-                        <li><a href="#" data-toggle="modal" data-target="#myModal">Sign-In</a></li>
+                        <li><a href="#contact-us">Contact</a></li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown">
+                                User  <span class="caret"></span>
+                            </a>
+
+                            <ul class="dropdown-menu">
+                                <li><a href="./student-registration.html">
+                                    <i class="fas fa-user-plus gly-icon"></i>Registration</a></li>
+                                <li><a href="./login.html">
+                                    <span class="glyphicon glyphicon-log-in gly-icon" ></span>Log-In
+                                </a></li>
+                                <li><a href="#" data-toggle="modal" data-target="#myModal">
+                                        <i class="fas fa-sign-in-alt gly-icon "></i>
+                                        Sign-In
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </li>
+                        
+                        
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown">More
+                            <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="  ./teachers-list.html">Teacher List</a></li>
+                                <li><a href="./student-list.html">Student List</a></li>
+                            </ul>
+                        </li>
                         
                     </ul>
                 </div>
@@ -93,7 +121,7 @@
                     <div class="well well-sm">
                         <form class="form-horizontal" method="post">
                             <fieldset>
-                                <legend class="text-center header ">Contact us</legend>
+                                <legend id="contact-us" class="text-center header ">Contact us</legend>
                                 <div class="form-group">
                                     <div class="col-md-10 col-md-offset-1">
                                         <input id="fname" name="name" type="text" placeholder="First Name" class="form-control">
@@ -186,17 +214,17 @@
         </footer>
 
     </header>
-
+ 
     <div class="modal fade" id="myModal" role="dialog">
             <div class="modal-dialog">
 
                 <!-- Modal content-->
                 <div class="modal-content">
-                    <div class="modal-header" style="padding:35px 50px;">
+                    <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal">&times;</button>
                         <h4><span class="glyphicon glyphicon-lock"></span> Login</h4>
                     </div>
-                    <div class="modal-body" style="padding:40px 50px;">
+                    <div class="modal-body">
                         <form role="form">
                             <div class="form-group">
                                 <label for="usrname"><span class="glyphicon glyphicon-user"></span> Username</label>
@@ -213,9 +241,9 @@
                         </form>
                     </div>
                     <div class="modal-footer">
-                            <button type="submit" class="btn btn-success"><span class="glyphicon glyphicon-off"></span>
+                            <button type="submit" class="btn btn-success"><span class="glyphicon glyphicon-log-in"></span>
                                 Login</button>
-                        <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal"><span
+                        <button type="submit" class="btn btn-danger btn-default" data-dismiss="modal"><span
                                 class="glyphicon glyphicon-off"></span> Cancel</button>
                          
                         <p>Forgot <a href="#">Password?</a></p>
